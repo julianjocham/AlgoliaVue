@@ -1,8 +1,12 @@
 module.exports = {
   integrations: {
-    __replace_me__: {
-      location: '@vue-storefront/__replace_me__-api/server',
-      configuration: {}
+    AlgoliaVue: { // name of your integration
+      location: '@vue-storefront/AlgoliaVue-api/server', // name of your api-client package followed by `/server`
+      configuration: {
+        api: {
+          url: '' // URL of your e-commerce platform
+        }
+      }
     }
   }
 };
